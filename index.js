@@ -1,4 +1,3 @@
-// "C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe"
 require("dotenv").config();
 const mongoose = require("mongoose");
 const express = require("express");
@@ -11,7 +10,6 @@ const cors = require("cors");
 const path = require("path");
 
 //Routes
-// const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
 
 //DB CONNECT
@@ -30,7 +28,6 @@ app.use(cookieParser());
 app.use(cors());
 
 //my routes
-// app.use("/", authRoutes);
 app.use("/", userRoutes);
 
 //If production
